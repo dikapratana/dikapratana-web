@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 "use client";
 
 import useEmblaCarousel from "embla-carousel-react";
@@ -25,14 +24,14 @@ export const Skills = () => {
   );
 
   return (
-    <section id="skills" className="py-20 px-4">
+    <section id="skills" className="py-12 sm:py-16 md:py-20 px-4">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-14">
-          <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-600 text-sm font-semibold mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-14">
+          <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-purple-100 text-purple-600 text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
             💻 TECH STACK
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800">
             Skills & Technologies
           </h2>
         </div>
@@ -48,16 +47,23 @@ export const Skills = () => {
               "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 12%, rgba(0,0,0,0.7) 22%, black 35%, black 65%, rgba(0,0,0,0.7) 78%, rgba(0,0,0,0.4) 88%, transparent 100%)",
           }}
         >
-          <div className="flex gap-6 px-6 py-4">
+          <div className="flex gap-4 sm:gap-6 px-4 sm:px-6 py-4">
             {DATA_HOME.skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex-[0_0_calc(100%/8)] min-w-[calc(100%/8)]"
+                className="
+                  flex-[0_0_33.333%] 
+                  min-w-[33.333%]
+                  sm:flex-[0_0_25%] 
+                  sm:min-w-[25%]
+                  md:flex-[0_0_calc(100%/8)]
+                  md:min-w-[calc(100%/8)]
+                "
               >
                 <div
                   className={clsx(
-                    "relative h-full rounded-2xl p-4",
-                    "transition-all duration-300",
+                    "relative h-full rounded-2xl p-3 sm:p-4",
+                    "transition-all duration-300"
                   )}
                 >
                   {/* Gradient accent */}
@@ -75,9 +81,9 @@ export const Skills = () => {
                       alt="skill-logo"
                       width={40}
                       height={40}
-                      className="h-10 w-10"
+                      className="h-9 w-9 sm:h-10 sm:w-10"
                     />
-                    <h3 className="text-base font-semibold text-gray-800">
+                    <h3 className="text-sm sm:text-base font-semibold text-gray-800">
                       {skill.name}
                     </h3>
                   </div>

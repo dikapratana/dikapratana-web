@@ -172,41 +172,53 @@ export default function Navbar() {
         </div>
       </nav>
       {/* Mobile Menu */}
-      <div
-        className={`fixed inset-0 bg-black/50 z-60 lg:hidden transition-opacity duration-300 ${
-          mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
-        onClick={() => setMobileMenuOpen(false)}
-      />
-      <div
-        className={`fixed top-0 right-0 h-full w-72 bg-white/95 backdrop-blur-2xl shadow-2xl z-60 lg:hidden transform transition-transform duration-300 ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="p-6">
-          <div className="flex justify-between mb-8">
-            <span className="font-bold text-lg">Menu</span>
-            <button onClick={() => setMobileMenuOpen(false)}>
-              <X className="w-5 h-5" />
-            </button>
-          </div>
-          <nav className="space-y-2">
-            {DATA_HOME.menuItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`w-full text-left px-4 py-3 rounded-xl transition-all ${
-                  activeSection === item.id
-                    ? "bg-linear-to-r from-orange-500 to-pink-500 text-white"
-                    : "hover:bg-orange-50"
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
-          </nav>
-        </div>
-      </div>
+   {/* Mobile Menu */}
+<div
+  className={`fixed inset-0 bg-black/40 z-50 lg:hidden transition-opacity duration-300 ${
+    mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+  }`}
+  onClick={() => setMobileMenuOpen(false)}
+/>
+
+<div
+  className={`fixed top-0 right-0 h-full w-72 bg-white/95 backdrop-blur-2xl shadow-2xl z-50 lg:hidden transform transition-transform duration-300 ${
+    mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+  }`}
+>
+  <div className="p-6 flex flex-col h-full">
+    <div className="flex justify-between items-center mb-6">
+      <span className="font-bold text-lg">Menu</span>
+      <button onClick={() => setMobileMenuOpen(false)}>
+        <X className="w-6 h-6 text-gray-700 hover:text-orange-500 transition-colors" />
+      </button>
+    </div>
+
+    <nav className="flex-1 overflow-y-auto space-y-2">
+      {DATA_HOME.menuItems.map((item) => (
+        <button
+          key={item.id}
+          onClick={() => scrollToSection(item.id)}
+          className={`w-full text-left px-4 py-3 rounded-xl transition-all font-medium ${
+            activeSection === item.id
+              ? "bg-linear-to-r from-orange-500 to-pink-500 text-white shadow-lg"
+              : "hover:bg-orange-50 text-gray-700"
+          }`}
+        >
+          {item.label}
+        </button>
+      ))}
+    </nav>
+
+    {/* Optional CTA di bawah menu */}
+    <button
+      onClick={() => scrollToSection("contact")}
+      className="mt-4 bg-blue-600 hover:bg-blue-700 text-white w-full py-3 rounded-xl font-semibold shadow-lg transition-all"
+    >
+      Ask us!
+    </button>
+  </div>
+</div>
+
     </>
   );
 }
