@@ -221,14 +221,6 @@ const portfolios = [
   {
     title: "Rain POS",
     category: "Frontend Developer - Skyrain Studio x Upward Project",
-    image: Epark,
-    description:
-      "A web-based Point of Sale (POS) application for managing sales, inventory, and transactions efficiently, designed to streamline business operations and improve overall workflow.",
-    tech: ["Laravel", "Jquery"],
-  },
-  {
-    title: "Rain POS",
-    category: "Frontend Developer - Skyrain Studio x Upward Project",
     image: Rain,
     description:
       "A web-based Point of Sale (POS) application for managing sales, inventory, and transactions efficiently, designed to streamline business operations and improve overall workflow.",

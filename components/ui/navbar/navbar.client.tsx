@@ -104,12 +104,12 @@ export default function Navbar() {
         />
       </div>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 lg:duration-500 ${
           isScrolled ? "py-3 mt-4" : "py-4"
         }`}
       >
         <div
-          className={`transition-all duration-500 ${
+          className={`transition-all duration-300 lg:duration-500 ${
             isScrolled
               ? "max-w-5xl mx-4 md:mx-auto bg-white/80 backdrop-blur-2xl rounded-2xl shadow-xl border border-gray-200/50"
               : "max-w-7xl mx-auto  backdrop-blur-xl "
