@@ -118,7 +118,7 @@ const experiences = [
   {
     company: "TepiBojonegoro -  Skyrain Studio",
     position: "Frontend Web & Mobile Developer",
-    period: "10/2024 – 11/2025",
+    period: "10/2024 – Present",
     location: "Bojonegoro, Indonesia",
     description:
       "Developed responsive web and mobile applications from designs, implementing clean code, reusable components, and real-time features using React.js, Next.js, Flutter, React Native, and Firebase.",
