@@ -166,6 +166,7 @@ const portfolios = [
     title: "Pijar Sekolah",
     category: "Frontend Developer - Skyrain Studio",
     image: Pijar,
+    url: "https://pijarsekolah.id/",
     description:
       "Digital education platform by Telkom Indonesia, providing online learning, school management, computer-based exams, and assignments to make teaching and learning more efficient.",
     tech: ["React.js", "Tailwind CSS", "React Query"],
@@ -174,6 +175,7 @@ const portfolios = [
     title: "TepiBojonegoro",
     category: "Frontend Web & Mobile Developer - Skyrain Studio",
     image: Tepi,
+    url: "https://tepibojonegoro.com/",
     description:
       "Platform that empowers local Bojonegoro SMEs by digitizing their transactions.",
     tech: ["React.js", "Next.js", "Flutter", "React Native"],
@@ -182,6 +184,7 @@ const portfolios = [
     title: "Yakes Intranet",
     category: "Fullstack Developer - Skyrain Studio",
     image: Yakes,
+    url: "https://yakestelkom.or.id/",
     description:
       "Internal platform for the health foundation’s employees, providing health information, announcements, updates, and resources to support staff well-being and communication.",
     tech: ["CodeIgniter", "MySQL", "jQuery", "Tailwind CSS"],
@@ -190,6 +193,7 @@ const portfolios = [
     title: "MariLiburan",
     category: "Frontend Developer - Skyrain Studio",
     image: MariLiburan,
+    url: "#",
     description:
       "An information platform for Indonesian tourist destinations, with ticket booking and merchandise ordering features.",
     tech: ["Next.js", "Tailwind CSS"],
@@ -198,6 +202,7 @@ const portfolios = [
     title: "Queue System",
     category: "Frontend Developer - Skyrain Studio",
     image: SistemAntrian,
+    url: "#",
     description:
       "Queue management platform for the Tax Service Office in Tuban, designed to streamline customer service and reduce waiting times.",
     tech: ["React.js", "React Native", "Tailwind CSS", "Socket.io"],
@@ -206,6 +211,7 @@ const portfolios = [
     title: "My Divorce Journey",
     category: "Frontend Developer - Skyrain Studio x Upward Project",
     image: Mdj,
+    url: "#",
     description:
       "Online platform providing divorce consultation services, legal guidance, and resources to support users throughout the divorce process.",
     tech: ["Laravel", "Jquery"],
@@ -214,6 +220,7 @@ const portfolios = [
     title: "Arboretum Park",
     category: "Frontend Developer - Skyrain Studio x Upward Project",
     image: Epark,
+    url: "#",
     description:
       "Information platform showcasing the locations and collections of plants within the peatland program, part of Pertamina’s CSR initiative for environmental conservation, education, and raising public awareness about ecosystem sustainability.",
     tech: ["Laravel", "Jquery"],
@@ -222,6 +229,7 @@ const portfolios = [
     title: "Rain POS",
     category: "Frontend Developer - Skyrain Studio x Upward Project",
     image: Rain,
+    url: "#",
     description:
       "A web-based Point of Sale (POS) application for managing sales, inventory, and transactions efficiently, designed to streamline business operations and improve overall workflow.",
     tech: ["Vue.js"],
@@ -230,6 +238,7 @@ const portfolios = [
     title: "KBIH NH",
     category: "Frontend Developer - Skyrain Studio x Upward Project",
     image: null,
+    url: "#",
     description:
       "An online platform for Hajj services, providing pilgrims with guidance, registration, and information to facilitate a smooth and organized pilgrimage experience.",
     tech: ["CodeIgniter", "jQuery"],
@@ -238,6 +247,7 @@ const portfolios = [
     title: "Admin Cari Dana",
     category: "Frontend Developer - Skyrain Studio x Upward Project",
     image: null,
+    url: "#",
     description:
       "An administrative web platform for managing fundraising campaigns, monitoring donations, and overseeing project progress efficiently.",
     tech: ["Laravel", "jQuery"],

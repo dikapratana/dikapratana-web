@@ -58,10 +58,14 @@ export const Portfolio = () => {
                   lg:flex-[0_0_calc(100%/3)] lg:min-w-[calc(100%/3)]
                 "
               >
-                <div
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${project.title} project`}
                   className={clsx(
-                    "relative h-full rounded-3xl bg-white overflow-hidden",
-                    "shadow-md shadow-neutral-300 transition-shadow duration-300"
+                    "relative block h-full rounded-3xl bg-white overflow-hidden",
+                    "shadow-md shadow-neutral-300 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
                   )}
                 >
                   {/* Image */}
@@ -108,7 +112,7 @@ export const Portfolio = () => {
                       ))}
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             ))}
           </div>
